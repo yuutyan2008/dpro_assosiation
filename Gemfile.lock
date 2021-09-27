@@ -127,6 +127,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.12.3-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.12.3-x86_64-linux)
+      racc (~> 1.4)
     pg (0.21.0)
     pry (0.14.1)
       coderay (~> 1.1)
@@ -176,6 +178,7 @@ GEM
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    rexml (3.2.5)
     rspec-core (3.10.1)
       rspec-support (~> 3.10.0)
     rspec-expectations (3.10.1)
@@ -245,6 +248,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   byebug
@@ -261,6 +265,7 @@ DEPENDENCIES
   rails (= 6.0.3)
   rails-controller-testing
   rails-i18n
+  rexml
   rspec-rails
   sass-rails (~> 5.0)
   selenium-webdriver
