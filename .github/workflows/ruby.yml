@@ -47,6 +47,9 @@ jobs:
           bundle exec rspec -r ./spec/my_formatter.rb -f MyFormatter -o .github/feedback_template.md
         continue-on-error: true
       - name: Rspec Results
+        env:
+          RAILS_ENV: "test"
+          DATABASE_URL: "postgres://postgres@localhost:5432/manyo_test"
         run: |
           bundle exec rspec
         continue-on-error: true
